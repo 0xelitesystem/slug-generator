@@ -21,6 +21,10 @@ Open `index.html` in any browser, or visit the GitHub Pages URL. Type or paste a
 
 Accent stripping uses Unicode normalization, so most accented Latin characters reduce to their base letters. Anything that is not a letter or digit becomes a hyphen, and repeated hyphens collapse.
 
+## More
+
+Part of a catalog of single-file browser tools and plain-language references, all MIT licensed and dependency-free: [0xelitesystem.github.io](https://0xelitesystem.github.io/). Built by [elitesystem.ai](https://elitesystem.ai).
+
 ## License
 
 MIT. Copyright (c) 2026 0xelitesystem.
