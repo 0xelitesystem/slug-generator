@@ -13,13 +13,34 @@ It runs entirely in the browser. Nothing is uploaded, stored, or tracked.
 - The character count
 - A copy button for the slug
 
-## How to use
+## Use
 
 Open `index.html` in any browser, or visit the GitHub Pages URL. Type or paste a title and the slug updates live. Strip accents is on by default. Stop-word removal is off by default, because dropping words like the and of can change meaning; turn it on only when the slug stays clear without them. Set a max length to cap the slug, which trims at a word boundary.
+
+## Why this exists
+
+Turning a title into a URL slug is a small job that should not need a library, a server, or an account. This tool does it in one HTML file with no tracking, released under the MIT license, so you can check exactly how each character is handled.
+
+## Privacy
+
+Everything runs in your browser. The title you type is never sent anywhere, and nothing is stored: no localStorage, no cookies, no analytics. Closing the tab clears it.
 
 ## Notes
 
 Accent stripping uses Unicode normalization, so most accented Latin characters reduce to their base letters. Anything that is not a letter or digit becomes a hyphen, and repeated hyphens collapse.
+
+## Run locally
+
+```
+git clone https://github.com/0xelitesystem/slug-generator
+cd slug-generator
+```
+
+Open `index.html` in a browser, or serve the folder with `python -m http.server` and visit http://localhost:8000.
+
+## Build
+
+No build step. The whole tool is one `index.html` file.
 
 ## More
 
